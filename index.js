@@ -42,35 +42,29 @@ let first-name = 'Yevhenii',
 
 
 //* Привіт Аня!
-let userName = 'Aня';
-prompt('Як тебе звати?');
+let userName = prompt('Як тебе звати?', 'Aня');
 
 alert(`Привіт ${userName}!Приємно познайомитись`);
 
 //* Рік народження
-const YEAR_BIRHT = 2022;
-prompt('Який рік твого народження?');
+const YEAR_BIRHT = prompt('Який рік твого народження?', 1986);
 
-alert(`Тобі ${YEAR_BIRHT - 1986} років!`);
+alert(`Тобі ${2022 - YEAR_BIRHT} років!`);
 
 //* Довжина сторони квадрата
-let quadSide = 5;
-prompt('Яка довжина сторони квадрата?');
+let quadSide = prompt('Яка довжина сторони квадрата?', 5);
 
 alert(`Периметр квадрата дорівнює ${quadSide * 4}`);
 
 //* Площа кола
-let circleRadius = 5,
-    pi = 3.14;
-prompt('Який радіус кола?');
+let circleRadius = prompt('Який радіус кола?', 5);
+let pi = 3.14;
 
 alert(`Площа кола дорівнює ${pi * circleRadius **2}`);
 
 //* Відстань між містами
-let distanceS = 300,
-    timeT = 4;
-prompt('Яка відстань від Полтави до Києва?');
-prompt('За який час хочете доїхати до Києва?');
+let distanceS = prompt('Яка відстань від Полтави до Києва?', 300);
+let timeT = prompt('За який час хочете доїхати до Києва?', 4);
 
 alert(`Швидкість повинна бути ${distanceS / timeT}км/год `);
 
